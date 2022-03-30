@@ -8,7 +8,7 @@ echo " ___) |   | |    / ___ \  |  _ <    | |  "
 echo "|____/    |_|   /_/   \_\ |_| \_\   |_|  "
 echo
 echo "Create & join channel, register anchors,"
-echo "and init&invoke the ems chaincode    "
+echo "and init&invoke the Order chaincode    "
 echo
 CHANNEL_NAME="$1"
 DELAY="$2"
@@ -22,7 +22,7 @@ NO_CHAINCODE="$5"
 : ${NO_CHAINCODE:="false"}
 COUNTER=1
 MAX_RETRY=10
-CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/ems/javascript/"
+CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/Order/javascript/"
 
 echo "Channel name : "$CHANNEL_NAME
 
@@ -71,14 +71,14 @@ updateAnchorPeers 0 1
 if [ "${NO_CHAINCODE}" != "true" ]; then
 
 	echo "Installing chaincode on peer0.org1..."
-	peer chaincode install -n ems -v 1.0 -p $CC_SRC_PATH -l node
+	peer chaincode install -n Order -v 1.0 -p $CC_SRC_PATH -l node
 	
 	echo "Instantiating chaincode on peer0.org1..."
 	#instantiateChaincode 0 1
 	peer chaincode instantiate \
     -o orderer.example.com:7050 \
     -C mychannel \
-    -n ems \
+    -n Order \
     -l node \
     -v 1.0 \
     -c '{"Args":[]}' \
@@ -94,7 +94,7 @@ if [ "${NO_CHAINCODE}" != "true" ]; then
 	peer chaincode invoke \
     -o orderer.example.com:7050 \
     -C mychannel \
-    -n ems \
+    -n Order \
     -c '{"function":"initLedger","Args":[]}' \
     --waitForEvent \
     --tls \
