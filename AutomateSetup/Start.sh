@@ -27,10 +27,6 @@ printf "\n---Deploying smart contract on the ganache Ethereum simulator...---\n"
 
 docker exec ganache-with-truffle truffle migrate
 
-#printf "\n---Installing the Energy Management System Fabric smart contract on peer0.org1.example.com---\n"
-
-docker exec cli scripts/script.sh
-
 printf "\n---Cleaning up...---\n"
 
 rm -rf ./ganache-cli/truffle

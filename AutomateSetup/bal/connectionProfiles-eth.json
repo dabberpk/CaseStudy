@@ -6,11 +6,5 @@
     "keystorePassword":"123456789",
     "adversaryVotingRatio": "0.2",
     "pollingTimeSeconds": 5
-  },
-  "fabric-1" : {
-    "@type": "fabric",
-    "walletPath": "/fab/wallet",
-    "userName": "admin",
-    "connectionProfilePath": "/fab/connection-org1.json"
   }
 }
