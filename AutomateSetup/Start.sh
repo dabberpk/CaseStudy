@@ -32,4 +32,11 @@ printf "\n---Cleaning up...---\n"
 
 rm -rf ./ganache-cli/truffle
 
+printf "\n---Configuring BAL to use Camunda binding---\n"
+curl -H "Content-Type: application/json" -X POST -d '{
+  "url": "http://172.16.238.14:8080/engine-rest/message",
+  "bindingId": "camunda"
+}' http://localhost:8081/blockchain-access-layer/webapi/bindings/
+
+
 printf "\n---DONE!---\n"
