@@ -38,6 +38,18 @@ services:
       case-study:
         ipv4_address: 172.16.238.13  
 
+  camunda:
+    build:
+      context: ./camunda
+      target: camunda
+    restart: always
+    container_name: camunda 
+    ports:
+      - "8089:8080"
+    networks:
+      case-study:
+        ipv4_address: 172.16.238.14
+
 networks:
   case-study:
     ipam:
