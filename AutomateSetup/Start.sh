@@ -26,6 +26,7 @@ sleep 9
 printf "\n---Deploying smart contract on the ganache Ethereum simulator...---\n"
 
 docker exec ganache-with-truffle truffle migrate
+docker exec ganache-with-truffle2 truffle migrate
 
 printf "\n---Cleaning up...---\n"
 

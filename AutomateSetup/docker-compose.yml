@@ -30,6 +30,17 @@ services:
       case-study:
         ipv4_address: 172.16.238.12  
 
+  ganache-with-truffle2:
+    container_name: ganache-with-truffle2
+    build:
+      context: ./ganache-cli
+      target: ganache
+    command: ["ganache-cli", "-m", "smart contract composition", "--defaultBalanceEther", "100000000", "-l", "471238800", "-g", "1", "-v", "--keepAliveTimeout", "15000", "-b", "12"]
+    ports:
+      - "8546:8545"
+    networks: 
+      case-study:
+        ipv4_address: 172.16.238.13  
 
 networks:
   case-study:
