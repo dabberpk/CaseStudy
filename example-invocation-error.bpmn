@@ -236,7 +236,7 @@
             <camunda:inputParameter name="timeout">0</camunda:inputParameter>
             <camunda:inputParameter name="inputs">
               <camunda:list>
-                <camunda:value>{                 "name": "amount",                 "type": "{\"type\":\"integer\",\"minimum\": 0,\"maximum\":115792089237316195423570985008687907853269984665640564039457584007913129639935}",                  "value": 15            }</camunda:value>
+                <camunda:value>{"name": "amount", "type": "{\"type\":\"integer\",\"minimum\": 0,\"maximum\":115792089237316195423570985008687907853269984665640564039457584007913129639935}", "value": 15 }</camunda:value>
               </camunda:list>
             </camunda:inputParameter>
             <camunda:inputParameter name="outputs">
