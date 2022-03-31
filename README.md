@@ -36,6 +36,9 @@ To stop the docker containers run Stop.sh.
 When the docker containers run and the smart contracts are deployed the example files can be
 deployed and started using Camunda Modeler.
 The REST endpoint of the camunda container is http://0.0.0.0:8089/engine-rest.
+The credentials for the camunda cockpit app are the default credentials:
+user:demo
+password:demo
 
 
 
