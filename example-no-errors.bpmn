@@ -392,7 +392,6 @@
       <bpmn:incoming>Flow_14k4pi4</bpmn:incoming>
       <bpmn:outgoing>Flow_19lq7g1</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:serviceTask id="Activity_082fm0b" />
   </bpmn:process>
   <bpmn:message id="Message_0pzk9yf" name="error_${execution.processInstanceId}_Activity_0d32ymd" />
   <bpmn:error id="Error_0x9dfm4" name="Error_3er46po" errorCode="-1" />
@@ -423,9 +422,6 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="152" y="302" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1ufq6c0_di" bpmnElement="Activity_082fm0b">
-        <dc:Bounds x="300" y="110" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0vn7j3z_di" bpmnElement="Activity_03104vf" isExpanded="true">
         <dc:Bounds x="550" y="80" width="2420" height="1190" />
