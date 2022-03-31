@@ -26,9 +26,9 @@ example-trigger-manual-resolve.bpmn will reach max nr. of retry and land in the 
 
 
 ## Dependecies:
-curl
-docker
-docker-compose
+curl  
+docker  
+docker-compose  
 
 used ports:  8081, 8545, 8546, 8089
 
@@ -41,8 +41,9 @@ When the docker containers run and the smart contracts are deployed the example 
 deployed and started using Camunda Modeler.
 The REST endpoint of the camunda container is http://0.0.0.0:8089/engine-rest.
 The credentials for the camunda cockpit app are the default credentials:
-user:demo
-password:demo
+
+user:demo  
+password:demo  
 
 
 
