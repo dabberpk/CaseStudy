@@ -49,7 +49,7 @@
                 </camunda:inputParameter>
                 <camunda:inputParameter name="doc">0</camunda:inputParameter>
                 <camunda:inputParameter name="callbackUrl">http://172.16.238.14:8080/engine-rest/message</camunda:inputParameter>
-                <camunda:inputParameter name="functionIdentifier">orderPart</camunda:inputParameter>
+                <camunda:inputParameter name="functionIdentifier">cancelOrder</camunda:inputParameter>
                 <camunda:inputParameter name="url">http://172.16.238.1:8081/blockchain-access-layer/webapi?blockchain=ethereum&amp;blockchain-id=eth-0&amp;address=0x75f17644EAEb3cC6511764a6F1138F14B3e33D0f</camunda:inputParameter>
               </camunda:inputOutput>
             </bpmn:extensionElements>
@@ -236,7 +236,7 @@
             <camunda:inputParameter name="timeout">0</camunda:inputParameter>
             <camunda:inputParameter name="inputs">
               <camunda:list>
-                <camunda:value>{                 "name": "amount",                 "type": "{\"type\":\"integer\",\"minimum\": 0,\"maximum\":115792089237316195423570985008687907853269984665640564039457584007913129639935}",                  "value": 15            }</camunda:value>
+                <camunda:value>{"name": "amount","type": "{\"type\":\"integer\",\"minimum\": 0,\"maximum\":115792089237316195423570985008687907853269984665640564039457584007913129639935}",  "value": 15 }</camunda:value>
               </camunda:list>
             </camunda:inputParameter>
             <camunda:inputParameter name="outputs">
@@ -301,8 +301,8 @@
                 </camunda:inputParameter>
                 <camunda:inputParameter name="doc">0</camunda:inputParameter>
                 <camunda:inputParameter name="callbackUrl">http://172.16.238.14:8080/engine-rest/message</camunda:inputParameter>
-                <camunda:inputParameter name="functionIdentifier">orderPart</camunda:inputParameter>
-                <camunda:inputParameter name="url">http://172.16.238.1:8081/blockchain-access-layer/webapi?blockchain=ethereum&amp;blockchain-id=eth-0&amp;address=0x75f17644EAEb3cC6511764a6F1138F14B3e33D0f</camunda:inputParameter>
+                <camunda:inputParameter name="functionIdentifier">cancelOrder</camunda:inputParameter>
+                <camunda:inputParameter name="url">http://172.16.238.1:8081/blockchain-access-layer/webapi?blockchain=ethereum&amp;blockchain-id=eth-1&amp;address=0x75f17644EAEb3cC6511764a6F1138F14B3e33D0f</camunda:inputParameter>
               </camunda:inputOutput>
             </bpmn:extensionElements>
             <bpmn:incoming>Flow_08s0sgi</bpmn:incoming>
@@ -392,6 +392,7 @@
       <bpmn:incoming>Flow_14k4pi4</bpmn:incoming>
       <bpmn:outgoing>Flow_19lq7g1</bpmn:outgoing>
     </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_082fm0b" />
   </bpmn:process>
   <bpmn:message id="Message_0pzk9yf" name="error_${execution.processInstanceId}_Activity_0d32ymd" />
   <bpmn:error id="Error_0x9dfm4" name="Error_3er46po" errorCode="-1" />
@@ -422,6 +423,9 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="152" y="302" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ufq6c0_di" bpmnElement="Activity_082fm0b">
+        <dc:Bounds x="300" y="110" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0vn7j3z_di" bpmnElement="Activity_03104vf" isExpanded="true">
         <dc:Bounds x="550" y="80" width="2420" height="1190" />

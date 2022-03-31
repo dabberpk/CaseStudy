@@ -49,7 +49,7 @@
                 </camunda:inputParameter>
                 <camunda:inputParameter name="doc">0</camunda:inputParameter>
                 <camunda:inputParameter name="callbackUrl">http://172.16.238.14:8080/engine-rest/message</camunda:inputParameter>
-                <camunda:inputParameter name="functionIdentifier">orderPart</camunda:inputParameter>
+                <camunda:inputParameter name="functionIdentifier">cancelOrder</camunda:inputParameter>
                 <camunda:inputParameter name="url">http://172.16.238.1:8081/blockchain-access-layer/webapi?blockchain=ethereum&amp;blockchain-id=eth-0&amp;address=0x75f17644EAEb3cC6511764a6F1138F14B3e33D0f</camunda:inputParameter>
               </camunda:inputOutput>
             </bpmn:extensionElements>
@@ -301,8 +301,8 @@
                 </camunda:inputParameter>
                 <camunda:inputParameter name="doc">0</camunda:inputParameter>
                 <camunda:inputParameter name="callbackUrl">http://172.16.238.14:8080/engine-rest/message</camunda:inputParameter>
-                <camunda:inputParameter name="functionIdentifier">orderPart</camunda:inputParameter>
-                <camunda:inputParameter name="url">http://172.16.238.1:8081/blockchain-access-layer/webapi?blockchain=ethereum&amp;blockchain-id=eth-0&amp;address=0x75f17644EAEb3cC6511764a6F1138F14B3e33D0f</camunda:inputParameter>
+                <camunda:inputParameter name="functionIdentifier">cancelOrder</camunda:inputParameter>
+                <camunda:inputParameter name="url">http://172.16.238.1:8081/blockchain-access-layer/webapi?blockchain=ethereum&amp;blockchain-id=eth-1&amp;address=0x75f17644EAEb3cC6511764a6F1138F14B3e33D0f</camunda:inputParameter>
               </camunda:inputOutput>
             </bpmn:extensionElements>
             <bpmn:incoming>Flow_08s0sgi</bpmn:incoming>
