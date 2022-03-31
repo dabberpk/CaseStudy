@@ -18,6 +18,8 @@ example-short-timeout.bpmn has a too small timeout for the second smart contract
 
 example-invocation-error.bpmn has a wrong smart contract address for the secons invocation, this should only trigger the first compensation, since the second smart contract was not executed.
 
+example-trigger-manual-resolve.bpmn will reach max nr. of retry and land in the resolve manually task.
+
 
 Dependecies:
 curl
