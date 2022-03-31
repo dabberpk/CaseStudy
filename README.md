@@ -8,7 +8,7 @@ Smart contract invocation task and transformation to standard BPMN:
 
 
 Smart contract compensation task and transformation to standard BPMN:
-![SCCT](scct-transform.png)
+![SCCT](scct-transformation.png)
 
 The examples invoke smart contract functions on two different Ethereum blockchains, simulated using Ganache.
 
