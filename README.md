@@ -10,7 +10,11 @@ Smart contract invocation task and transformation to standard BPMN:
 Smart contract compensation task and transformation to standard BPMN:
 ![SCCT](scct-transformation.png)
 
-The examples invoke smart contract functions on two different Ethereum blockchains, simulated using Ganache.
+The examples invoke smart contract functions using SCIP on two different Ethereum blockchains, simulated using Ganache.
+As SCIP-Gateway we use BAL with camunda message bindings.
+
+
+The example files behave as follows:
 
 example-no-errors.bpmn will run without errors.
 
