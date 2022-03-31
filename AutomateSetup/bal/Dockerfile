@@ -1,6 +1,6 @@
 FROM alpine/git as clone
 WORKDIR /app
-RUN git clone --branch feature/enable-choosing-bindings  https://github.com/dabberpk/BlockchainAccessLayer.git
+RUN git clone --branch feature/enable-choosing-bindings  https://github.com/TIHBS/BlockchainAccessLayer.git
 
 FROM maven:3.5-jdk-8-alpine as build
 WORKDIR /app
